@@ -1,0 +1,243 @@
+.bg{
+    background-image: url(Images/im1.jpeg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    margin-top: -690px;
+    background-attachment: fixed;
+}
+.op{
+    background: rgba(0,0,0,0.6);
+    height: 100vh;
+}
+.navbar-brand{
+    font-size: 33px;
+    color: #FF7043;
+    font-weight: bold;
+    
+}
+.navbar{
+    box-shadow: 0 0 20px #CC6600,0 0 20px #CC6600,0 0 20px #CC6600;
+    background: black;
+}
+.nav-link{
+    color: #FF7043;
+    font-size: 18px;
+}
+.nav-item:hover .nav-link{
+    color: #D84315;
+}
+.carousel-item{
+    height: 400px;
+    margin-top: 90px;
+}
+.carousel-img-1{
+    background-image: url(Images/road1.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+.carousel-img-2{
+    background-image: url(Images/road2.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+.carousel-img-3{
+    background-image: url(Images/road3.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+.carousel-img-4{
+    background-image: url(Images/road4.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+#icons i{
+    font-size: 50px;
+}
+.fa-car{
+    color:orange;
+    text-shadow: 0 0 75px black;
+}
+.fa-heart{
+    color: red;
+    text-shadow: 0 0 29px red;
+}
+.fa-motorcycle{
+    color:;
+    text-shadow: 0 0 70px black;
+}
+.c1{
+    margin-top: 200px;
+    background: rgba(0,0,0,0.5);
+}
+.cc1{
+    background: rgba(0,0,0,0.7);
+}
+.bbb{
+    background: rgba(0,0,0,0.7);
+    color: red;
+}
+.bbb:hover{
+    background: red;
+    color: black;
+}
+.c3{
+    margin-top: 200px;
+    background: rgba(0,0,0,0.5);
+}
+.cc3{
+    background: rgba(0,0,0,0.7);
+}
+.c2{
+    margin-top: 140px;
+    background: rgba(0,0,0,0.5);
+}
+.c2 h3{
+    color: white
+}
+.fa-youtube-play{
+    cursor: pointer;
+    color: red;
+    font-size: 50px;
+    
+}
+.fa-youtube-play:hover{
+    text-shadow: 0 0 20px black;
+}
+.c2 p{
+    color: white;
+}
+.cc2{
+    background: rgba(0,0,0,0.7);
+}
+.c2 .sss{
+    color: aliceblue;
+    font-size: 20px;
+    cursor: pointer;
+}
+.c2 .sss:hover{
+    color: red;
+}
+.testi{
+    color: #FF7043;
+}
+.testi a{
+    color: red;
+}
+#public{
+    margin-top: 100px
+}
+.person-img{
+    margin-top: -70px;
+}
+.pc4:hover{
+    background: #B2EBF2;
+}
+.pc4:hover .pch4{
+    background: #29B6F6;
+}
+.pc3:hover{
+    background: #FFCDD2;
+}
+.pc3:hover .pch3{
+    background: #EF5350;
+}
+.pc2:hover{
+    background: #FFF9C4;
+}
+.pc2:hover .pch2{
+    background: #FFEE58;
+}
+.pc1:hover{
+    background: #BDBDBD;
+}
+.pc1:hover .pch1{
+    background: #455A64;
+}
+.rr{
+    margin-top: 50px;
+}
+#public i{
+    cursor: pointer;
+}
+
+#public .fa-facebook{
+    color: blue;
+}
+#public .fa-google-plus{
+    color: #F44336;
+}
+#public .fa-github{
+    color: black;
+}
+#public .fa-twitter{
+    color: #00BCD4;
+}
+.img-fluid:hover{
+    filter: grayscale(100%);
+    transition: 0.3s;
+    transform: scale(0.8);
+}
+.bg2{
+    background-image: url(Images/im3.jpeg);
+    background-position: center;
+    background-size: cover;
+    height: 95vh;
+    width: 100%;
+    background-attachment: fixed;
+}
+.op2{
+    background: rgba(0,0,0,0.5);
+    height: 95vh;
+}
+
+.contact-card{
+    background: rgba(0,0,0,0.2);
+    color: aliceblue;
+    border: 2px solid white;
+}
+.cch{
+   background: rgba(0,0,0,0.7); 
+}
+.contact-card input{
+    background: rgba(0,0,0,0.4);
+}
+.contact-card textarea{
+    background: rgba(0,0,0,0.7);
+}
+
+#last-footer{
+    background: black;
+}
+.fa-copyright{
+    font-size: 17px;
+}
+.name{
+    color: orangered;
+    font-size: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

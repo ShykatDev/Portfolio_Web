@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LevelX</title>
+    
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/lightbox.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="l.css">
+    
+    <link rel="shortcut icon" type="image/x-icon" href="Images/logo1.png">
+    
+</head>
+<body>
+    
+    
+    <!----Navbar---->
+    
+    <nav class="navbar navbar-expand-md fixed-top">
+        <div class="container">
+        <a class="navbar-brand" href="LevelX.html"><img src="Images/logo1.png" style="width: 35px" class="mr-4">LevelX</a>
+        <ul class="navbar-nav">
+            <li class="nav-item active mr-5"><a class="nav-link p-4" href="LevelX.html">Home</a></li>
+            <li class="nav-item mr-5"><a class="nav-link p-4" href="#dynamic">About</a></li>
+            <li class="nav-item mr-5"><a class="nav-link p-4" href="#public">Team</a></li>
+            <li class="nav-item"><a class="nav-link p-4" href="#concact">Contact Us</a></li>
+        </ul>
+        </div>
+    </nav>
+    
+    
+    
+    <!----Coursel sec---->
+    
+    <section id="showcase" class="bg-dark">
+        
+        <div class="carousel slide" data-ride="carousel" id="mycaro">
+            <ol class="carousel-indicators">
+                <li data-slide-to="0" class="active" data-target="#mycaro"></li>
+                <li data-slide-to="1" data-target="#mycaro"></li>
+                <li data-slide-to="2" data-target="#mycaro"></li>
+                <li data-slide-to="3" data-target="#mycaro"></li>
+            </ol>
+            <div class="carousel-inner">
+                
+                <div class="carousel-item carousel-img-1 active">
+                    
+                    <div class="container">
+                        <div class="carousel-caption mb-5 pb-5">
+                            <h2 class="display-4">Heading One</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, nam ut! Vel cupiditate dolorem recusandae. Dolor veritatis deleniti porro nihil.</p>
+                            <a class="btn btn-danger" href="#">Learn More</a>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="carousel-item carousel-img-2">
+                    
+                    <div class="container">
+                        <div class="carousel-caption mb-5 pb-5 text-right">
+                            <h2 class="display-4">Heading Two</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, nam ut! Vel cupiditate dolorem recusandae. Dolor veritatis deleniti porro nihil.</p>
+                            <a class="btn btn-warning" href="#">Learn More</a>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="carousel-item carousel-img-3">
+                    
+                    <div class="container">
+                        <div class="carousel-caption mb-5 pb-5 text-left">
+                            <h2 class="display-4">Heading Three</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, nam ut! Vel cupiditate dolorem recusandae. Dolor veritatis deleniti porro nihil.</p>
+                            <a class="btn btn-info" href="#">Learn More</a>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="carousel-item carousel-img-4">
+                    
+                    <div class="container">
+                        <div class="carousel-caption mb-5 pb-5">
+                            <h2 class="display-4">Heading Four</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, nam ut! Vel cupiditate dolorem recusandae. Dolor veritatis deleniti porro nihil.</p>
+                            <a class="btn btn-dark" href="#">Learn More</a>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+            </div>
+            
+            <a href="#mycaro" class="carousel-control-prev" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a href="#mycaro" class="carousel-control-next" data-slide="prev">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+            
+        </div>
+        
+    </section>
+    
+    <!---icon---->
+    
+    <section id="icons" class="text-center my-5">
+       <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <i class="fa fa-car mb-3"></i>
+                <h4>Car</h4>
+                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, doloribus?</p>
+                <button class="btn btn-outline-warning">Learn More</button>
+            </div>
+            <div class="col-md-4">
+                <i class="fa fa-heart mb-3"></i>
+                <h4>Love</h4>
+                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, doloribus?</p>
+                <button class="btn btn-outline-danger">Learn More</button>
+            </div>
+            <div class="col-md-4">
+                <i class="fa fa-motorcycle mb-3"></i>
+                <h4>Bike</h4>
+                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, doloribus?</p>
+                <button class="btn btn-outline-dark">Learn More</button>
+            </div>
+        </div>
+        </div>
+    </section>
+    
+    
+    <!----Dynamic Sec---->
+    
+    
+        
+        <div id="bike"></div>
+        <div class="bg">
+        <div class="op">
+        <section id="dynamic">
+      
+       <div class="container">
+        <div class="row">
+            <div class="col-md-3 text-center">
+                <div class="card text-light c1">
+                    <div class="card-header cc1">
+                        <h4 class="py-2">Login</h4>
+                    </div>
+                    <div class="card-body py-4">
+                        <input class="form-control bg-dark text-info" type="text" placeholder="Username">
+                        <br>
+                        <input class="form-control bg-dark text-danger" type="password" placeholder="Password">
+                        <br>
+                        <button class="btn bbb">login</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                
+                <div class="card text-center c2">
+                    <div class="card-header cc2">
+                        <h3 class="py-4">Subscribe</h3>
+                    </div>
+                    <div class="card-body">
+                    <i class="fa fa-youtube-play py-2 px-4"></i>
+                    <p class="lead p-3 px-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab voluptas quam sunt nihil, vel eveniet magni dolor vitae doloribus dolorum?</p>
+                    <i class="fa fa-facebook sss mr-5"></i>
+                    <i class="fa fa-instagram sss mr-5"></i>
+                    <i class="fa fa-twitter sss mr-5"></i>
+                    <i class="fa fa-linkedin sss"></i>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="col-md-3 text-center">
+                <div class="card text-light c3">
+                    <div class="card-header cc3 py-3">
+                        <h4>Objectives</h4>
+                    </div>
+                    <div class="card-body">
+                        <p class="lead">UpWork</p>
+                        <div class="progress">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" style="width: 90%">90%</div>
+                        </div>
+                        <p class="lead">DownMarket</p>
+                        <div class="progress">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" style="width: 60%">60%</div>
+                        </div>
+                        <p class="lead">Buisness</p>
+                        <div class="progress">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" style="width: 80%">80%</div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        
+    </section>
+       
+       <!----Testimonial---->
+       
+       <section id="testimonial" class="mt-5">
+           <div class="container">
+               <div class="row">
+                   <div class="col text-center text-light">
+                       <h2>Testimonial</h2>
+                   </div>
+               </div>
+               <div class="row">
+                   <div class="col">
+                       
+                           <div class="slider testi">
+                              <div>
+                               <blockquote class="blockquote">
+                                   <p class="lead"><i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis explicabo, quibusdam odit mollitia suscipit minima!</i></p>
+                               </blockquote>
+                               <footer class="blockqoute-footer">
+                                   -<b>Shykat</b> from <a href="#">DevShykat</a>
+                               </footer>
+                               </div>
+                               <div>
+                               <blockquote class="blockquote">
+                                   <p class="lead"><i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis explicabo, quibusdam odit mollitia suscipit minima!</i></p>
+                               </blockquote>
+                               <footer class="blockqoute-footer">
+                                   -<b>Sandy</b> from <a href="#">DevShykat</a>
+                               </footer>
+                               </div>
+                               <div>
+                               <blockquote class="blockquote">
+                                   <p class="lead"><i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis explicabo, quibusdam odit mollitia suscipit minima!</i></p>
+                               </blockquote>
+                               <footer class="blockqoute-footer pb-3">
+                                   -<b>Sam</b> from <a href="#">DevShykat</a>
+                               </footer>
+                               </div>
+                           </div>
+                       
+                   </div>
+               </div>
+           </div>
+       </section>
+       
+    </div>
+    
+    
+    </div>
+    
+    
+    <!----Public---->
+    
+    <section id="public" class="mb-5">
+        <div class="container text-center">
+           <div class="row">
+               <div class="col text-center mb-5">
+                   <h2 class="display-4 pb-5">Our Team</h2>
+                   <hr>
+               </div>
+           </div>
+            <div class="row rr">
+                <div class="col-3">
+                    <div class="card pc1">
+                        <div class="card-header pch1">
+                            <img src="Images/person1.jpg" class="img-fluid rounded-circle person-img" style="width: 120px">
+                            <h2>Lara Aderson</h2>
+                        </div>
+                        <div class="card-body">
+                            
+                            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime consequatur asperiores ullam sit distinctio commodi.</p>
+                            <i class="fa fa-facebook mr-4"></i>
+                            <i class="fa fa-google-plus mr-4"></i>
+                            <i class="fa fa-github mr-4"></i>
+                            <i class="fa fa-twitter"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="card pc2">
+                        <div class="card-header pch2">
+                            <img src="Images/person2.jpg" class="img-fluid rounded-circle person-img" style="width: 120px">
+                            <h2>Kandy Kan</h2>
+                        </div>
+                        <div class="card-body">
+                            
+                            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime consequatur asperiores ullam sit distinctio commodi.</p>
+                            <i class="fa fa-facebook mr-4"></i>
+                            <i class="fa fa-google-plus mr-4"></i>
+                            <i class="fa fa-github mr-4"></i>
+                            <i class="fa fa-twitter"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="card pc3">
+                        <div class="card-header pch3">
+                            <img src="Images/person3.jpg" class="img-fluid rounded-circle person-img" style="width: 120px">
+                            <h2>Meron Lara</h2>
+                        </div>
+                        <div class="card-body">
+                            
+                            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime consequatur asperiores ullam sit distinctio commodi.</p>
+                            <i class="fa fa-facebook mr-4"></i>
+                            <i class="fa fa-google-plus mr-4"></i>
+                            <i class="fa fa-github mr-4"></i>
+                            <i class="fa fa-twitter"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="card pc4">
+                        <div class="card-header pch4">
+                            <img src="Images/person4.jpg" class="img-fluid rounded-circle person-img" style="width: 120px">
+                            <h2>Andy Sara</h2>
+                        </div>
+                        <div class="card-body">
+                            
+                            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime consequatur asperiores ullam sit distinctio commodi.</p>
+                            
+                            <i class="fa fa-facebook mr-4"></i>
+                            <i class="fa fa-google-plus mr-4"></i>
+                            <i class="fa fa-github mr-4"></i>
+                            <i class="fa fa-twitter"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    
+    <!----image galary---->
+    
+    
+    <section id="galary" class="my-5">
+       <div class="container">
+        <div class="row">
+            <div class="col text-center">
+                <h2 class="display-4">Galary</h2>
+                <p class="lead mb-5 py-4">Image around Us</p>
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <a href="Images/bg1.jpeg" data-lightbox="mygalary">
+                        <img src="Images/bg1.jpeg" class="img-fluid">
+                    </a>
+                </div>
+                <div class="col-4">
+                    <a href="Images/bg3.jpeg" data-lightbox="mygalary">
+                        <img src="Images/bg3.jpeg" class="img-fluid">
+                    </a>
+                </div>
+                <div class="col-4">
+                    <a href="Images/bg10.jpeg" data-lightbox="mygalary">
+                        <img src="Images/bg10.jpeg" class="img-fluid">
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+            <div class="row mt-4">
+                <div class="col-4">
+                    <a href="Images/bg9.jpeg" data-lightbox="mygalary">
+                        <img src="Images/bg9.jpeg" class="img-fluid">
+                    </a>
+                </div>
+                <div class="col-4">
+                    <a href="Images/bg8.jpeg" data-lightbox="mygalary">
+                        <img src="Images/bg8.jpeg" class="img-fluid">
+                    </a>
+                </div>
+                <div class="col-4">
+                    <a href="Images/bg11.jpeg" data-lightbox="mygalary">
+                        <img src="Images/bg11.jpeg" class="img-fluid">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    <!----Concact---->
+    
+    <section id="concact" class="bg-dark">
+        
+        <div class="bg2">
+            <div class="op2">
+                
+                
+                <div class="row text-light text-center">
+                    <div class="col mt-5">
+                        <h2 class="display-4">Contact Us</h2>
+                        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, nihil!</p>
+                    </div>
+                </div>
+                <div class="container">
+                <div class="row">
+                    <div class="col-8">
+                        <div class="card contact-card">
+                            <div class="card-header text-center cch">
+                                <h3>Please fill out this form to contact us</h3>
+                            </div>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <input type="text" placeholder="First Name" class="form-control">
+                                    </div>
+                                    <div class="col-6">
+                                        <input type="text" placeholder="Last Name" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="row mt-4">
+                                    <div class="col-6">
+                                        <input type="email" placeholder="Email" class="form-control">
+                                    </div>
+                                    <div class="col-6">
+                                        <input type="text" placeholder="Number" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 text-right">
+                                        <textarea class="form-control mt-4" cols="5" rows="4" placeholder="Enter Message Here"></textarea>
+                                        <butoon class="btn btn-outline-light mt-4 py-2">Send</butoon>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4>Get In Touch</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, consequuntur.</p>
+                                <h4>Address</h4>
+                                <p>Narail,Jessore,Bangladesh</p>
+                                <h4>Email</h4>
+                                <p>saikatsam346@gmail.com</p>
+                                <h4>Phone</h4>
+                                <p>+91 9781588779</p>
+                                <p>+880 01763573358</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                
+            </div>
+        </div>
+        
+    </section>
+    
+    
+    <!----Copyright---->
+    
+    
+    <section id="last-footer" class="text-light text-center">
+       <div class="py-5">
+        <i class="fa fa-copyright"> Copyright By</i>
+        <br>
+        Devoloper <a href="#" class="name">Shykat Raha</a>
+        </div>
+    </section>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="js/lightbox-plus-jquery.min.js"></script>
+    <script src="js/lightbox.min.js"></script>
+    <script src="js/particles.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

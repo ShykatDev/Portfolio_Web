@@ -1,0 +1,245 @@
+body{
+    background: black;
+    width: 100%;
+    font-family: 'Orbitron', sans-serif;
+}
+
+
+
+
+.left-item ul{
+    position: absolute;
+}
+.up-nav{
+    height: 6vh;
+    width: 100%;
+}
+.up-nav nav a{
+    color: grey;
+    text-decoration: none;
+}
+.up-nav nav a:hover{
+    color: darkgrey;
+}
+.right-item ul{
+    position: absolute;
+    right: 0px;
+}
+.up-nav nav .india{
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.up-nav hr{
+    margin-top: 25px;
+}
+
+
+
+.second-nav{
+    height: 9vh;
+    width: 100%;
+}
+.second-nav .logo{
+    margin-right: 100px;
+}
+.second-nav a{
+    text-decoration: none;
+    color: grey;
+}
+.second-nav a:hover{
+    color: darkgrey;
+}
+.second-nav hr{
+    margin-top:1px;
+}
+
+
+
+.main-nav{
+    margin-top: 5px;
+    height: 10vh;
+    width: 100%;
+    font-size: 11px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    color: grey;
+    background: rgba(20,20,20,0.7);
+}
+.main-nav ul{
+    margin-top: 5px;
+}
+.main-nav .navbar-brand{
+    margin-top: 5px;
+    font-size: 11px;
+    letter-spacing: 2px;
+    color: grey;
+}
+.main-nav ul a{
+    color: grey;
+}
+.main-nav ul a:hover{
+    color: darkgrey;
+}
+.main-nav button{
+    margin-top: 7px;
+}
+
+
+
+#bg1{
+    height: 75vh;
+    background: url(images/bg1.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    font-family: 'Yeon Sung', cursive;
+    border-bottom: 1px solid grey;
+}
+#bg1 h2{
+    letter-spacing: 1px;
+}
+#bg1 h1{
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 50px;
+    
+}
+#bg1 button{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+
+
+#bg2 .r1{
+    width: 100%;
+}
+#bg2 p{
+    font-family: 'Orbitron', sans-serif;
+    font-size: 16px;
+    padding-top: 50px;
+    color: aliceblue;
+    padding-left: 150px;
+    padding-right: 150px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding-bottom: 80px;
+}
+#bg2 .c1{
+    background: #212121;
+}
+#bg2 .c2{
+    background: #0D0D0D;
+}
+#bg2 .c3{
+    background: #212121;
+}
+
+
+
+#bg3 .c1{
+    padding: 0px 150px; 
+}
+#bg3 .c1 p{
+    font-size: 18px;
+}
+#bg3 .r2{
+    letter-spacing: 1px;
+}
+
+
+
+#bg4{
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-image: url(images/bg2.jpg);
+    margin-top: 0px;
+    
+}
+#bg4 .upsdw{
+    width: 100%;
+    height: 30px;
+    background: black;
+    box-shadow: 0 0 30px black,0 0 30px black,0 0 50px black;
+}
+#bg4 .dwnsdw{
+    margin-top: 93vh;
+    width: 100%;
+    height: 30px;
+    background: black;
+    box-shadow: 0px -10px 8px 20px black;
+}
+
+
+#display .r1{
+    padding: 0 150px;
+}
+#display .im2{
+    margin-top: 20px;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+
+
+
+#expand .r1{
+    padding: 0 150px;
+}
+
+
+
+#footer .r1{
+    padding: 0 200px;
+    background: #171717;
+}
+#footer .r1 p{
+    font-size: 11px;
+    color: aliceblue;
+    letter-spacing: 1px;
+}
+#footer .r2{
+    background: #0A0A0A;
+    font-size: 12px;
+}
+#footer .r2 p{
+    color: grey;
+    cursor: pointer;
+    letter-spacing: 1px;
+}
+#footer .r2 p:hover{
+    color: darkgrey;
+}
+#footer .r3{
+    padding: 0 200px;
+    background: #171717;
+}
+#footer .r3 a{
+    text-decoration: none;
+    color: grey;
+}
+#footer .r3 a:hover{
+    color: darkgrey;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

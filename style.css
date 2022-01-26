@@ -1,0 +1,1061 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;0,900;1,100;1,200;1,300;1,400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Raleway", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+.fullWebPage {
+  width: 100%;
+  height: auto;
+}
+.loginPage {
+  width: 100%;
+  height: 100vh;
+  background: #f1c40f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.loginPage input {
+  margin: 20px 0;
+  width: 340px;
+  height: 50px;
+  border: none;
+  border-radius: 10px;
+  padding-left: 20px;
+  font-size: 15px;
+  outline: none;
+}
+.loginPage .login {
+  width: 100px;
+  height: 45px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 10px;
+  background: #000;
+  color: white;
+  cursor: pointer;
+  margin-left: -260px;
+  transition: 0.3s;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+.loginPage .login::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: white;
+  top: 0;
+  left: 0;
+  border-radius: 10px;
+  transition: 0.3s;
+  transform: translateX(-100px);
+  z-index: -1;
+}
+.loginPage .login:hover {
+  color: black;
+  box-shadow: 4px 8px 11px rgba(0, 0, 0, 0.3);
+}
+.loginPage .login:hover:after {
+  transform: translateX(0);
+}
+#homePage {
+  width: 100%;
+  height: 100vh;
+  overflow-x: hidden;
+  position: relative;
+}
+.navBar {
+  width: 100%;
+  height: 10vh;
+  position: fixed;
+  top: 0vh;
+  left: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 100;
+  overflow: hidden;
+  background: rgb(255, 255, 255);
+}
+.navBar .logo {
+  width: 70px;
+  height: 90px;
+  background-image: url(./assests/logo.png);
+  background-position: center;
+  background-size: 37%;
+  background-repeat: no-repeat;
+}
+
+.navBar .menu ul {
+  width: 360px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.navBar .menu ul li {
+  list-style: none;
+  width: 100px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+}
+.navBar .menu ul li a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  padding: 20px 25px;
+  justify-content: center;
+  align-items: center;
+  font-size: 17px;
+  transition: 0.1s;
+}
+.navBar .menu ul li:hover a {
+  font-weight: bold;
+}
+.navBar .menu ul li::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100px;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(
+    to bottom,
+    rgb(255, 230, 3),
+    rgb(255, 255, 255)
+  );
+  transform: translateY(53px);
+  transition: 0.5s;
+  z-index: -1;
+  opacity: 0;
+}
+.navBar .menu ul li:hover:after {
+  transform: translateY(-25px);
+  opacity: 1;
+}
+
+.shadow img {
+  position: fixed;
+  top: 7.8vh;
+  left: 34.2%;
+  opacity: 0.7;
+  z-index: 100;
+}
+.portfolio button {
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: none;
+  background: #f1c40f;
+  cursor: pointer;
+  transition: 0.3s;
+  position: relative;
+  transition: 0.3s;
+  overflow: hidden;
+}
+.portfolio button a {
+  text-decoration: none;
+  font-weight: 500;
+  color: black;
+}
+.portfolio button:hover {
+  box-shadow: 4px 8px 11px rgba(0, 0, 0, 0.3);
+  transform: scale(1.1);
+}
+
+.banner {
+  width: 100%;
+  height: auto;
+  padding: 100px 0;
+  overflow: hidden;
+  margin-top: 15vh;
+}
+.elements {
+  width: 60%;
+  margin: 0 auto;
+  height: 450px;
+  text-align: center;
+  position: relative;
+  padding-top: 20px;
+}
+.picName {
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.profile {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background-image: url(./assests/pic.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 230px;
+  margin-top: -20px;
+}
+.name {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background: rgba(241, 196, 15, 0.5);
+  margin-top: -20px;
+  position: absolute;
+  right: 230px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.name h1 {
+  font-size: 35px;
+  letter-spacing: 2px;
+}
+.headline {
+  font-size: 30px;
+  letter-spacing: 5px;
+  position: absolute;
+  bottom: 80px;
+  text-transform: uppercase;
+  left: 198px;
+}
+.buttons {
+  position: absolute;
+  bottom: 0;
+  left: 34.8%;
+}
+.buttons button {
+  width: 110px;
+  height: 45px;
+  border-radius: 7px;
+  transition: 0.3s;
+  cursor: pointer;
+  margin: 0 20px;
+}
+.buttons button a {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+}
+.buttons button:hover {
+  box-shadow: 5px 10px 11px rgba(0, 0, 0, 0.3);
+  transform: scale(1.1);
+}
+.resume {
+  border: none;
+  background: rgb(114, 114, 114);
+  position: relative;
+  overflow: hidden;
+}
+
+.projectbtn {
+  background: #f1c40f;
+  border: none;
+  position: relative;
+  overflow: hidden;
+}
+.resume a,
+.projectbtn a {
+  color: white;
+}
+.projectbtn::after,
+.resume::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #000000;
+  top: 0;
+  left: 0;
+  border-radius: 7px;
+  transform: translateX(-110px);
+  transition: 0.3s;
+  border: 1px solid #000;
+  z-index: -1;
+}
+.projectbtn:hover:after,
+.resume:hover:after {
+  transform: translateX(0px);
+}
+
+.social {
+  width: 40vw;
+  height: 20px;
+  position: absolute;
+  bottom: 50%;
+  right: -18%;
+  display: flex;
+  justify-content: space-around;
+  transform: rotate(-90deg);
+}
+.social a {
+  text-decoration: none;
+  color: rgb(109, 109, 109);
+}
+.social a:hover {
+  transform: scale(1.1);
+}
+.fb:hover {
+  color: blue;
+}
+.gm:hover {
+  color: #ff0a02;
+}
+.ln:hover {
+  color: #02afff;
+}
+.ins:hover {
+  color: #ff02f2;
+}
+
+.secInfo {
+  width: 40vw;
+  height: 20px;
+  position: fixed;
+  bottom: 50%;
+  left: -19%;
+  display: flex;
+  justify-content: space-around;
+  transform: rotate(-90deg);
+}
+/* -------------------------------for all page ------------------*/
+.pageinfo {
+  font-size: 60px;
+  letter-spacing: 15px;
+  color: #8a8a8a67;
+  text-transform: uppercase;
+  z-index: 99;
+  position: absolute;
+  transform: rotate(-90deg);
+  left: -75px;
+  top: 45%;
+}
+.displayNone {
+  display: none;
+}
+.displayAll {
+  display: block;
+}
+.logMessage {
+  letter-spacing: 5px;
+  font-size: 17px;
+  position: absolute;
+  bottom: 90px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.copy {
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: 0;
+  position: absolute;
+  bottom: 55px;
+  font-style: italic;
+}
+.upBtn {
+  position: fixed;
+  bottom: 30px;
+  left: 30px;
+  z-index: 100;
+
+  border-radius: 50%;
+}
+.upBtn a {
+  text-decoration: none;
+
+  width: 60px;
+  height: 60px;
+  background: #f1c40f;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: -4px -8px 11px rgba(0, 0, 0, 0.3) inset;
+}
+.lni-pin {
+  font-size: 30px;
+  color: black;
+}
+/* -------------------------------for all page ------------------*/
+
+/* -------------------------------HomePage Done------------------ */
+
+#aboutPage {
+  width: 100%;
+  height: 100vh;
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+.primaryBox {
+  width: 65%;
+  height: 65%;
+  border: 1px solid white;
+  position: relative;
+}
+.upperBox,
+.lowerBox {
+  width: 50%;
+  height: 60%;
+  background: #000;
+  border: 1px solid white;
+  position: absolute;
+}
+.upperBox {
+  top: -20px;
+  left: -100px;
+  background-image: url(./assests/about.svg);
+  background-position: center;
+  background-size: 50%;
+  background-repeat: no-repeat;
+}
+.lowerBox {
+  bottom: -20px;
+  right: -100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.lowerBox p {
+  color: grey;
+  width: 80%;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+.aboutTitle {
+  font-size: 40px;
+  letter-spacing: 20px;
+  color: white;
+  position: absolute;
+  top: 70px;
+  right: 20%;
+  text-transform: uppercase;
+}
+.message {
+  width: 110px;
+  height: 45px;
+  transition: 0.3s;
+  border-radius: 7px;
+  cursor: pointer;
+  border: none;
+  background: white;
+  position: relative;
+  overflow: hidden;
+  position: relative;
+  top: 75%;
+  left: 31%;
+  transition: 0.3s;
+  z-index: 1;
+}
+.message:hover {
+  transform: scale(1.1);
+}
+.message a {
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: bold;
+  color: black;
+}
+.message::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #f1c40f;
+  top: 0;
+  left: 0;
+  border: 1px solid #f1c40f;
+  border-radius: 7px;
+  transform: translateX(120px);
+  transition: 0.3s;
+  z-index: -5;
+}
+.message:hover:after {
+  transform: translateX(0px);
+}
+.triangle1 {
+  position: absolute;
+  width: 3%;
+  bottom: 18%;
+  left: 53%;
+  transform: rotate(180deg);
+  animation: toleft 1s linear infinite;
+  animation-direction: alternate;
+}
+@keyframes toleft {
+  100% {
+    left: 45%;
+  }
+}
+.triangle2 {
+  position: absolute;
+  width: 3%;
+  top: 18%;
+  left: 43%;
+  transform: rotate(180deg);
+  animation: toright 1s linear infinite;
+  animation-direction: alternate;
+}
+@keyframes toright {
+  100% {
+    left: 53%;
+  }
+}
+.socialio {
+  position: absolute;
+  bottom: 5%;
+  left: 43.5%;
+}
+.socialio a {
+  margin: 0 15px;
+  font-size: 22px;
+}
+.socialio {
+  right: 0;
+}
+
+.socialio i {
+  transition: 0.3s;
+  color: white;
+}
+.socialio i:hover {
+  color: #f1c40f;
+  transform: scale(1.2);
+}
+
+/* -----------------------AboutPage Done------------------------- */
+
+#skillPage {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+}
+.rain {
+  width: 16%;
+  text-align: center;
+  height: 80%;
+  float: left;
+  position: absolute;
+  top: 12vh;
+  right: 50px;
+}
+.rain .cloud i {
+  position: relative;
+}
+.rain .cloud .one {
+  font-size: 110px;
+  color: #222;
+  position: relative;
+  top: 60px;
+  left: 80px;
+  color: rgb(163, 163, 163);
+  text-shadow: 5px 5px 10px black;
+}
+.rain .cloud .two {
+  font-size: 80px;
+  position: relative;
+  color: rgb(63, 63, 63);
+  top: 70px;
+  text-shadow: 5px 5px 10px black;
+}
+.rain .cloud .three {
+  font-size: 60px;
+  color: rgb(107, 107, 107);
+  position: relative;
+  top: 20px;
+  left: 10px;
+  text-shadow: 5px 5px 10px black;
+}
+
+.rain .drop {
+  position: relative;
+  width: 100%;
+  height: 70%;
+  margin-left: 80px;
+}
+.rain .drop i {
+  color: rgb(95, 95, 95);
+}
+.rain .drop .r1 {
+  position: absolute;
+  top: 20px;
+  animation: droprain 3s linear infinite;
+  animation-delay: 0s;
+}
+.rain .drop .r2 {
+  position: absolute;
+  top: 20px;
+  animation: droprain 3s linear infinite;
+  animation-delay: 0.6s;
+  left: 55px;
+}
+.rain .drop .r3 {
+  position: absolute;
+  top: 20px;
+  animation: droprain 3s linear infinite;
+  animation-delay: 0.2s;
+  left: 70px;
+}
+.rain .drop .r4 {
+  position: absolute;
+  top: 20px;
+  animation: droprain 3s linear infinite;
+  animation-delay: 0.7s;
+  left: 80px;
+}
+.rain .drop .r5 {
+  position: absolute;
+  top: 20px;
+  animation: droprain 3s linear infinite;
+  animation-delay: 1.4s;
+  left: 110px;
+}
+.rain .drop .r6 {
+  position: absolute;
+  top: 20px;
+  animation: droprain 3s linear infinite;
+  animation-delay: 2.2s;
+  left: 50px;
+}
+.rain .drop .r7 {
+  position: absolute;
+  top: 20px;
+  animation: droprain 3s linear infinite;
+  animation-delay: 1.5s;
+  left: 70px;
+}
+.rain .drop .r8 {
+  position: absolute;
+  top: 20px;
+  animation: droprain 3s linear infinite;
+  animation-delay: 0.8s;
+  left: 140px;
+}
+.rain .drop .r9 {
+  position: absolute;
+  top: 20px;
+  animation: droprain 3s linear infinite;
+  animation-delay: 2s;
+  left: 120px;
+}
+.rain .drop .r10 {
+  position: absolute;
+  top: 20px;
+  animation: droprain 3s linear infinite;
+  animation-delay: 1.7s;
+  left: 90px;
+}
+.rain .drop .r11 {
+  position: absolute;
+  top: 20px;
+  animation: droprain 3s linear infinite;
+  animation-delay: 0.4s;
+  left: 100px;
+}
+.rain .drop .r12 {
+  position: absolute;
+  top: 20px;
+  animation: droprain 3s linear infinite;
+  animation-delay: 1.9s;
+  left: 70px;
+}
+.rain .drop .r13 {
+  position: absolute;
+  top: 20px;
+  animation: droprain 3s linear infinite;
+  animation-delay: 2.9s;
+  left: 130px;
+}
+@keyframes droprain {
+  0% {
+    top: 20px;
+  }
+  50% {
+    top: 100px;
+  }
+  100% {
+    top: 400px;
+  }
+}
+
+.mainSec {
+  width: 80%;
+  height: 80%;
+  margin-top: 120px;
+  margin-left: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.textArea {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.textArea p {
+  width: 80%;
+  height: auto;
+  letter-spacing: 1px;
+  color: rgb(99, 99, 99);
+}
+
+.grid-container {
+  width: 60%;
+  height: 70%;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 0px;
+}
+.grid-item {
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+.grid-item img {
+  width: 190px;
+  height: 190px;
+  object-fit: contain;
+}
+/* -----------------------SkillPage Done------------------------- */
+
+#galaryPage {
+  width: 100%;
+  height: 195vh;
+  position: relative;
+  padding-top: 10vh;
+}
+
+#galaryPage .head {
+  width: 100%;
+  height: 10vh;
+  position: relative;
+}
+#galaryPage .head h1 {
+  color: #8a8a8a67;
+  font-weight: 400;
+  padding-right: 30px;
+  font-size: 60px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  text-align: right;
+}
+.downline {
+  width: 200px;
+  height: 5px;
+  background: #8a8a8a67;
+  position: absolute;
+  right: 30px;
+  bottom: 0;
+}
+
+#galaryPage .galary {
+  margin-top: 1vh;
+}
+#galaryPage .frow,
+#galaryPage .srow,
+#galaryPage .trow {
+  width: 100%;
+  height: 60vh;
+  display: flex;
+  justify-content: space-between;
+}
+#galaryPage .frow .left {
+  width: 55%;
+  background: url(./assests/levelX.png);
+}
+#galaryPage .srow .right {
+  width: 45%;
+  background: url(./assests/slide.png);
+}
+#galaryPage .trow .left {
+  width: 55%;
+  background: url(./assests/predator.png);
+}
+#galaryPage .frow .left,
+#galaryPage .srow .right,
+#galaryPage .trow .left {
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  transition: 0.4s;
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
+}
+#galaryPage .frow .left h2,
+#galaryPage .srow .right h2,
+#galaryPage .trow .left h2 {
+  color: #222;
+  font-weight: 600;
+  visibility: visible;
+  display: inline-block;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+#galaryPage .frow .left p,
+#galaryPage .srow .right p,
+#galaryPage .trow .left p {
+  color: #222;
+  visibility: visible;
+  letter-spacing: 2px;
+}
+#galaryPage .frow .left:hover {
+  width: 80%;
+}
+#galaryPage .srow .right:hover {
+  width: 65%;
+}
+#galaryPage .trow .left:hover {
+  width: 70%;
+}
+#galaryPage .frow .left:hover h2,
+#galaryPage .frow .left:hover p,
+#galaryPage .srow .right:hover h2,
+#galaryPage .srow .right:hover p,
+#galaryPage .trow .left:hover h2,
+#galaryPage .trow .left:hover p {
+  visibility: hidden;
+}
+#galaryPage .frow .left::after,
+#galaryPage .srow .right::after,
+#galaryPage .trow .left::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  transition: 0.4s;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+#galaryPage .frow .left::after {
+  background: #ccc;
+}
+#galaryPage .srow .right::after {
+  background: #ffab91;
+}
+#galaryPage .trow .left::after {
+  background: #68bbff;
+}
+
+#galaryPage .frow .right p,
+#galaryPage .srow .left p,
+#galaryPage .trow .right p {
+  width: 80%;
+  letter-spacing: 2px;
+  color: rgb(247, 247, 247);
+  padding: 10px;
+  text-align: center;
+}
+
+#galaryPage .frow .right a:hover,
+#galaryPage .srow .left a:hover,
+#galaryPage .trow .right a:hover {
+  background: white;
+  color: #222;
+}
+#galaryPage .frow .right,
+#galaryPage .srow .left,
+#galaryPage .trow .right {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#galaryPage .frow .right {
+  width: 20%;
+  background: #222;
+}
+#galaryPage .srow .left {
+  width: 35%;
+  background: #e65100;
+}
+#galaryPage .trow .right {
+  width: 30%;
+  background: #000033;
+}
+
+#galaryPage .frow .left:hover:after,
+#galaryPage .srow .right:hover:after,
+#galaryPage .trow .left:hover:after {
+  opacity: 0;
+}
+#galaryPage .frow .right a,
+#galaryPage .srow .left a,
+#galaryPage .trow .right a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  padding: 10px 18px;
+  border: 1px solid white;
+  border-radius: 10px;
+  transition: 0.3s;
+  font-size: 12px;
+  margin-top: 30px;
+}
+
+/* ------------------------------------projectPage done--------------------------------- */
+
+.footer {
+  width: 100%;
+  height: 60vh;
+  position: relative;
+  background: rgb(102, 102, 102);
+}
+.upperSec {
+  width: 30%;
+  height: 40%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+.socialio2 {
+  position: absolute;
+  bottom: 0%;
+  left: 26.5%;
+}
+.socialio2 a {
+  margin: 0 15px;
+  font-size: 22px;
+}
+.socialio2 {
+  right: 0;
+}
+
+.socialio2 i {
+  transition: 0.3s;
+  color: white;
+}
+.socialio2 i:hover {
+  color: #f1c40f;
+  transform: scale(1.2);
+}
+.upperSec img {
+  width: 7%;
+  margin: 20px 0;
+}
+.upperSec a {
+  text-decoration: none;
+  font-size: 25px;
+  color: #f1c40f;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.lowerSec {
+  width: 50%;
+  height: 50%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.leftS,
+.rightS {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.leftS a {
+  font-weight: 500;
+  margin: 10px 0;
+  text-decoration: none;
+  color: #ccc;
+}
+.leftS a:hover {
+  color: #f1c40f;
+}
+.logout,
+.messagelast {
+  width: 100px;
+  height: 40px;
+  margin: 30px 0;
+  position: relative;
+  border: none;
+  z-index: 1;
+  overflow: hidden;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.3s;
+}
+.logout:hover,
+.messagelast:hover {
+  transform: scale(1.1);
+  box-shadow: 3px 6px 11px rgba(0, 0, 0, 0.3);
+}
+.logout::after,
+.messagelast::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #f1c40f;
+  transition: 0.3s;
+  top: 0;
+  left: 0;
+  transform: translateY(-50px);
+  z-index: -1;
+}
+.logout:hover:after,
+.messagelast:hover:after {
+  transform: translateY(0);
+}
+.last {
+  width: 100%;
+  height: 10%;
+  background: rgb(39, 39, 39);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.last p {
+  color: #ccc;
+}
+.leftLine {
+  width: 200px;
+  height: 2px;
+  background: #000;
+  position: absolute;
+  left: 20%;
+  top: 50%;
+}
+.rightLine {
+  width: 200px;
+  height: 2px;
+  background: #000;
+  position: absolute;
+  right: 20%;
+  top: 50%;
+}
